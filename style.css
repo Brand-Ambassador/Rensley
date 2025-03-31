@@ -1,26 +1,46 @@
+/* Global Styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Helvetica Neue", Arial, sans-serif;
   background: #ffffff;
   color: #111;
   padding: 2rem;
   margin: 0;
 }
 
+/* Container and Layout */
 .container {
   max-width: 720px;
   margin: 0 auto;
 }
 
-h1, h2 {
-  color: #d6000c;
+/* Heading and Logo Styling */
+.verizon-heading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 1rem;
 }
 
+.verizon-logo {
+  width: 180px; /* Adjust size as needed */
+  height: auto;
+}
+
+/* Headings with Verizon Red */
+h1,
+h2 {
+  color: #ef3123; /* Verizon Red */
+  align-items: center;
+}
+
+/* Form Styling */
 form {
   display: grid;
   gap: 1rem;
   margin-top: 2rem;
 }
 
+/* Label and Input */
 label {
   display: flex;
   flex-direction: column;
@@ -31,14 +51,93 @@ input {
   padding: 0.5rem;
   border: 1px solid #ccc;
   border-radius: 4px;
+  font-size: 1rem;
 }
 
+/* Button Styling */
 button {
   padding: 0.75rem;
-  background: #d6000c;
+  background: #d6000c; /* Verizon Red */
   color: white;
   border: none;
   font-weight: bold;
   border-radius: 4px;
   font-size: 1rem;
+  cursor: pointer;
+}
+
+/* Button Hover */
+button:hover {
+  background: #b2000a; /* Slightly darker for hover effect */
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.5rem;
+}
+
+th,
+td {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+th {
+  background-color: #f9f9f9;
+  font-weight: bold;
+}
+
+/* Mobile-Friendly Styles */
+@media (max-width: 600px) {
+  body {
+    padding: 1rem;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  h1,
+  h2 {
+    font-size: 1.5rem;
+    align-items: center;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+/* Calendly Container - Fix Full Width Issue */
+.calendly-container {
+  margin-top: 2rem;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Fix Calendly Widget Responsiveness */
+.calendly-inline-widget {
+  width: 80%;
+  height: 530px;
+  border: none;
+  margin: 0 auto;
+}
+
+/* Ensure Mobile Responsiveness */
+@media (max-width: 600px) {
+  .calendly-container {
+    padding: 0.5rem;
+  }
+
+  .calendly-inline-widget {
+    height: 500px;
+  }
 }
