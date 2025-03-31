@@ -13,6 +13,18 @@ body {
   margin: 0 auto;
 }
 
+/* Verizon button for language */
+
+.lang-btn {
+  background-color: #fa1c0c;
+  color: rgb(229, 235, 50);
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
 /* Heading and Logo Styling */
 .verizon-heading {
   display: flex;
@@ -29,7 +41,7 @@ body {
 /* Headings with Verizon Red */
 h1,
 h2 {
-  color: #ef3123; /* Verizon Red */
+  color: #ff1100; /* Verizon Red */
   align-items: center;
 }
 
