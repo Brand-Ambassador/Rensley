@@ -109,15 +109,24 @@
       <a href="index-zh.html" class="lang-btn">中文</a>
     </div>
   </body>
-  <footer style="margin-top: 3rem; font-size: 0.9rem; color: #666">
+  <footer
+    style="margin-top: 3rem; font-size: 0.9rem; color: #666; text-align: center"
+  >
     <p>
-      &copy; <span id="year"></span> Verizon Business by Rensley. All rights
+      &copy; <span id="date"></span> Verizon Business by Rensley. All rights
       reserved.
     </p>
   </footer>
 
   <script>
-    // Dynamic Year
-    document.getElementById("year").textContent = new Date().getFullYear();
+    // Dynamic Full Date
+    const dateOptions = {
+      weekday: "short",
+      year: "numeric",
+      month: "short",
+      day: "numeric",
+    };
+    const today = new Date().toLocaleDateString("en-US", dateOptions);
+    document.getElementById("date").textContent = today;
   </script>
 </html>

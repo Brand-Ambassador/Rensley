@@ -315,4 +315,24 @@
       </div>
     </div>
   </body>
+  <footer
+    style="margin-top: 3rem; font-size: 0.9rem; color: #666; text-align: center"
+  >
+    <p>
+      &copy; <span id="date"></span> वेराइज़न बिजनेस बाय रेंसली। सभी अधिकार
+      सुरक्षित हैं।
+    </p>
+  </footer>
+
+  <script>
+    // Dynamic Full Date
+    const dateOptions = {
+      weekday: "short",
+      year: "numeric",
+      month: "short",
+      day: "numeric",
+    };
+    const today = new Date().toLocaleDateString("en-US", dateOptions);
+    document.getElementById("date").textContent = today;
+  </script>
 </html>
