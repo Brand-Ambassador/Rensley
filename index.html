@@ -109,4 +109,15 @@
       <a href="index-zh.html" class="lang-btn">中文</a>
     </div>
   </body>
+  <footer style="margin-top: 3rem; font-size: 0.9rem; color: #666">
+    <p>
+      &copy; <span id="year"></span> Verizon Business by Rensley. All rights
+      reserved.
+    </p>
+  </footer>
+
+  <script>
+    // Dynamic Year
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </html>
